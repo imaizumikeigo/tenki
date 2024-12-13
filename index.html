@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  
+    <form>
+        <select name="area" id="area">
+            <option value="130000">東京</option>
+            <option value="110000">埼玉</option>
+            <option value="014100">釧路・根室地方</option>
+        </select>
+    </form> 
+
+    <div id="location">
+     地域を選択してください
+    </div>
+    <div class="weatherForecast">
+        <div class="weather">
+            <div class="date"></div>
+            <img class="weatherImg">
+            <div class="temp"><span class="tempMin"></span><span class="tempMax"></span></div>
+        </div>
+    </div>
+    <a href="https://www.jma.go.jp/bosai/forecast/" target="_blank">
+        <p id="updatedate"></p>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>
